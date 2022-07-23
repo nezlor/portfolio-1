@@ -1,0 +1,134 @@
+.main-logo {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    @include breakpoint(md) {
+        left: 3rem;
+        top: 3rem;
+    }
+}
+$timing : 265ms;
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0;
+    @include breakpoint(md) {
+        margin: 1rem 1rem 1rem 0 ;
+    }
+    li {
+        display: flex;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+        img {
+            max-width: 30px;
+            position: absolute;
+            transition: all $timing ease-out;
+            left: calc(50% - 15px);
+            top: 21px;
+            fill: $color-primary;
+            &:hover {
+                @include transformScale(1.8);
+                fill: #fff;
+            }
+        }
+    }
+    i {
+        color: #fff;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        transition: all $timing ease-out;
+    }
+
+    a {
+        display: inline-block;
+
+        &:before {
+            @include transformScale();
+            content: "";
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            display: block;
+            background: #000;
+            transition: all $timing ease-out;
+        }
+
+        &:hover:before {
+            transform: scale(0);
+            transition: all $timing ease-in;
+        }
+
+        &:hover i {
+            @include transformScale(1.8);
+            background: $color-primary;
+            background: #000;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all $timing ease-in;
+        }
+    }
+
+    a.social-square {
+
+        &:before {
+            background: $color-primary;
+            border-radius: 10%;
+        }
+
+        &:hover:before {
+            transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -webkit-transform: scale(-180deg);
+            border-radius: 100%;
+        }
+
+        &:hover i {
+            @include transformScale(1.6);
+            color: #fff;
+            transform: scale(1.6);
+            -webkit-text-fill-color: #fff;
+        }
+    }
+}
+.social-container {
+    align-items: center;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    @include breakpoint(md) {
+        flex-direction: row;
+    }
+    .social-header {
+        color: #000;
+        font-size: 1.4rem;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .separator {
+        display: none;
+        position: relative;
+        width: 100px;
+        &:after {
+            background-color: #000;
+            content: '';
+            left: calc(50% - 32px);
+            position: absolute;
+            height: 4px;
+            width: 60%;
+        }
+        @include breakpoint(md) {
+                display: flex;
+        }
+    }
+}
+
