@@ -30,7 +30,7 @@ $timing : 265ms;
             top: 21px;
             fill: $color-primary;
             &:hover {
-                @include transformScale(1.8);
+                @include transformScale(1.9);
                 fill: #fff;
             }
         }
@@ -63,7 +63,7 @@ $timing : 265ms;
         }
 
         &:hover i {
-            @include transformScale(1.8);
+            @include transformScale(1.9);
             background: $color-primary;
             background: #000;
             -webkit-background-clip: text;
