@@ -29,7 +29,6 @@ return (
       <li><a href="https://www.instagram.com/nezlor/" target="_blank"  rel="noreferrer" ><i className="fa fa-instagram"></i></a></li>
       <li><a href="https://twitter.com/nezlor" target="_blank" rel="noreferrer"><i className="fa fa-twitter"></i></a></li>
       <li><a href="https://www.linkedin.com/in/davenesbitt7/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin"></i></a></li>
-      {/* <li><a href="https://thenounproject.com/nezlor/" target="_blank" rel="noreferrer"><img src={nounIcon} alt="" className=""/></a></li> */}
   </ul>
 </div>
 </Col>
