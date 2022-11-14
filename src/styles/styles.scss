@@ -28,6 +28,8 @@ $container-max-widths: (
 @import "utilities/breakpoints.scss";
 @import "utilities/variables.scss";
 @import "utilities/typography.scss";
+@import "utilities/reset.scss";
+@import "utilities/navigation.scss";
 
 
 //----------------------------------*\
@@ -49,3 +51,5 @@ $container-max-widths: (
 //----------------------------------*/
 
 @import "pages/landing.scss";
+@import "pages/form.scss";
+@import "pages/portfolio.scss";
