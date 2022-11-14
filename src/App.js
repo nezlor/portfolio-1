@@ -6,6 +6,7 @@ import mainLogo from '../src/images/logo.svg';
 import './styles/styles.scss';
 import Portfolio from './components/pages/portfolio.js';
 import Menu from './components/menu';
+import MobileMenu from './components/mobileMenu.js';
 
 
 
@@ -17,6 +18,7 @@ function App() {
     <img src={mainLogo} alt="david nesbitt logo" className="img-fluid main-logo"/>
 </Link>
 <Menu/>
+<MobileMenu/>
     <Routes>
     <Route exact path='/' element={< Home />}></Route>
     <Route exact path='/portfolio' element={< Portfolio />}></Route>

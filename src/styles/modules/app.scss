@@ -16,7 +16,7 @@ html {
     outline: .35rem solid #000;
     outline-offset: -.7rem;
     @include breakpoint(md) {
-      outline: 1rem solid #000;
+      outline: .75rem solid #000;
       outline-offset: -2rem;
     }
   }

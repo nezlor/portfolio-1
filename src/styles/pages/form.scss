@@ -15,20 +15,28 @@
         border-radius: 0;
         border: 1px solid  #000;
         margin-bottom: 3rem;
-        min-height: 250px;
+        min-height: 175px;
+        @include breakpoint(md) {
+            min-height: 250px;
+        }
         }
     .btn-submit {
         background-color: #fff;
-        border: 6px solid #000;
-        font-size: 1.6rem;
+        border: 4px solid #000;
+        font-size: 1.3rem;
         text-transform: uppercase;
         font-weight: 800;
-        padding-bottom: .5rem .25rem;
+        padding: .65rem .25rem;
         transition: background-color .25s linear;
         &:hover {
             background-color: #000;
             color: #fff;
             transition: background-color .25s linear;
+        }
+        @include breakpoint(md) {
+            font-size: 1.6rem;
+            padding: 1rem .25rem;
+            border: 6px solid #000;
         }
     }
 

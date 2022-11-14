@@ -3,7 +3,40 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
+  width: 90vw;
   justify-content: center;
+  top: calc(50% - 45vh);
+  position: absolute;
+  left: calc(50% - 45vw);
+  @include breakpoint(md) {
+    left: calc(50% - 25vw);
+    top: calc(50% - 25vh);
+    height: 50vh;
+    width: 50vw;
+  }
+ * {
+  width: 100%;
+  text-align: center;
+ }
+
+  input {
+    width: 100%;
+    margin: 1rem 0;
+    max-width: 250px;
+  }
+  button {
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: .25rem 2rem;
+    width: 100%;
+  }
+  ._1YwH3 {
+    max-width: 250px;
+    width: 100%;
+  }
+}
+._ovIFV {
+  font-size: 1.6rem;
 }

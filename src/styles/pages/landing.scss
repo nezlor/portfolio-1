@@ -3,6 +3,7 @@
     left: 1rem;
     top: 1rem;
     z-index: 4;
+    filter: contrast(0);
     @include breakpoint(md) {
         left: 3rem;
         top: 3rem;
